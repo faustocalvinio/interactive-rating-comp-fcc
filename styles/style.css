@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+body{
+    font-family: 'Overpass',sans-serif;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+}
+.card{
+    background-color: blue;
+    width: 22rem;
+}
+
+.icon-star{
+    padding: .5rem;
+    border-radius: 40%;
+    background-color: hsl(213, 19%, 18%);
+}
+.title{
+    color: hsl(0, 0%, 100%);
+}
+.main-text{
+    color:hsl(216, 12%, 54%);
+}
+.number-list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+}
+.number{
+    background-color: pink;
+}
+.attribution{
+    position: absolute;
+    top: 90%;
+    left: 2%;
+}
