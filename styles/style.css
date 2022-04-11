@@ -7,10 +7,13 @@
     --mediumGrey: hsl(216, 12%, 54%);
     --darkBlue: hsl(213, 19%, 18%);
     --veryDarkBlue: hsl(216, 12%, 8%);
+    --pink:#ffa4b3;
 }
 
 body{
     font-family: 'Overpass',sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
     min-height: 100vh;
     justify-content: center;
@@ -20,28 +23,29 @@ body{
 .card{
     background-color: hsl(213, 18%, 12%);
     width: 21rem;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 2rem;
+    position: relative;
 }
 
 .icon-star{
-    padding: .5rem;
-    border-radius: 40%;
-    background-color: hsl(213, 19%, 18%);
+    padding:1rem;
+    border-radius: 50%;
+    background-color: var(--darkBlue);
 }
 .title{
-    color: hsl(0, 0%, 100%);
+    color: var(--white);
 }
 .main-text{
-    color:hsl(216, 12%, 54%);
+    color:var(--mediumGrey);
 }
 .number-list{
     display: flex;
     flex-direction: row;
     list-style: none;
     justify-content: space-between;
-    width: 100%;
-    
+    padding: 0;
+
 }
 .number{
     background-color:var(--darkBlue);
@@ -54,6 +58,15 @@ body{
     align-items: center;
 
 }
+.number:hover{
+    background-color: var(--orange);
+    cursor: pointer;
+    color: var(--white);
+}
+.selected{
+    background-color: var(--lightGrey);
+    color: var(--white);
+}
 .btn-submit{
     width: 100%;
     text-transform: uppercase;
@@ -61,13 +74,52 @@ body{
     color: var(--white);
     height: 2.5rem;
     border: none;
-    border-radius: 1rem;
+    border-radius: 2rem;
     letter-spacing: .1rem;
     font-weight: 700;
     cursor: pointer;
+}
+.btn-submit:hover{
+    background-color: var(--white);
+    color: var(--orange);
 }
 .attribution{
     position: absolute;
     top: 90%;
     left: 2%;
+}
+.attribution a{
+    color: var(--pink);
+}
+.attribution a:hover{
+    color: var(--orange);
+}
+.atr-txt{
+    color: var(--white);
+}
+.img-sent{
+    
+}
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.selection-txt-new{
+    text-align: center;
+   
+}
+.title-new{
+    text-align: center;
+}
+.new-main-txt{
+    text-align: center;
+}
+.selection-txt{
+    color: var(--orange);
+    background-color: var(--darkBlue);
+    border-radius: 1rem;
+    width: fit-content;
+    padding: .5rem;
 }
