@@ -10,11 +10,10 @@ numbersList.forEach(numero => {
 
 
 submitBtn.addEventListener('click',()=>{
+    let choicedScore=document.querySelector('.selected').innerText;
     document.querySelector('.card').classList.toggle('flexbox')
     document.querySelector('.icon-star').remove();
-    // star.style.opacity=0;
     document.querySelector('.title').remove();
-    // title.style.opacity=0;
     document.querySelector('.main-text').remove();
     document.querySelector('.number-list').remove();
     submitBtn.remove();
@@ -23,7 +22,7 @@ submitBtn.addEventListener('click',()=>{
     imageSent.classList='img-sent'
     let selectionText=document.createElement('p');
     selectionText.className='selection-txt selection-txt-new';
-    selectionText.innerText='You selected Add rating here out of 5';
+    selectionText.innerText=`You selected ${choicedScore} out of 5`;
     let titleNew=document.createElement('h1');
     titleNew.classList='title title-new';
     titleNew.innerText='Thank you!';
@@ -34,8 +33,4 @@ submitBtn.addEventListener('click',()=>{
     document.querySelector('.card').appendChild(selectionText);    
     document.querySelector('.card').appendChild(titleNew);    
     document.querySelector('.card').appendChild(mainTextNew);
-    // maintxt.style.opacity=0;
-    // let numberUList=document.querySelector('.number-list');
-    // numberUList.style.opacity=0;
-    // submitBtn.style.opacity=0;
 });
