@@ -20,6 +20,25 @@ body{
     align-items: center;
     background-color: var(--veryDarkBlue);
 }
+.ty-container{
+    display: none;
+}
+.active{
+    display: flex;
+    flex-direction: column;
+}
+.selection-txt{
+    color: var(--orange);
+    background-color: var(--darkBlue);
+    padding: .7rem;
+    border-radius: 1rem;
+    width: fit-content;
+    align-self: center;
+}
+.img-ty{
+    width: 10rem;
+    align-self: center;
+}
 .card{
     background-color: hsl(213, 18%, 12%);
     width: 21rem;
@@ -35,6 +54,7 @@ body{
 }
 .title{
     color: var(--white);
+    margin: 0;
 }
 .main-text{
     color:var(--mediumGrey);
@@ -96,30 +116,4 @@ body{
 }
 .atr-txt{
     color: var(--white);
-}
-.img-sent{
-    
-}
-.flexbox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.selection-txt-new{
-    text-align: center;
-   
-}
-.title-new{
-    text-align: center;
-}
-.new-main-txt{
-    text-align: center;
-}
-.selection-txt{
-    color: var(--orange);
-    background-color: var(--darkBlue);
-    border-radius: 1rem;
-    width: fit-content;
-    padding: .5rem;
 }
