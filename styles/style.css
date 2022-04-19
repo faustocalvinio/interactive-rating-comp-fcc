@@ -6,7 +6,7 @@
     --lightGrey: hsl(217, 12%, 63%);
     --mediumGrey: hsl(216, 12%, 54%);
     --darkBlue: hsl(213, 19%, 18%);
-    --cardBg:hsl(215, 22%, 15%);
+    --cardBg:rgb(30, 37, 47);
     --veryDarkBlue: hsl(216, 12%, 8%);
     --pink:#ffa4b3;
 }
@@ -42,8 +42,8 @@ body{
 }
 .card{
     background-color: var(--cardBg);
-    width: 21rem;
-    padding: 2rem;
+    width: 22rem;
+    padding: 1.5rem;
     border-radius: 2rem;
     position: relative;
 }
@@ -56,6 +56,7 @@ body{
 .title{
     color: var(--white);
     /* margin: ; */
+    font-size:1.5rem;
 }
 .main-text{
     color:var(--mediumGrey);
@@ -95,7 +96,7 @@ body{
     text-transform: uppercase;
     background-color: var(--orange);
     color: var(--white);
-    height: 2.5rem;
+    height: 2.8rem;
     border: none;
     border-radius: 2rem;
     letter-spacing: .1rem;
