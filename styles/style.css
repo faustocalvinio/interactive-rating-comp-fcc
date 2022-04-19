@@ -6,6 +6,7 @@
     --lightGrey: hsl(217, 12%, 63%);
     --mediumGrey: hsl(216, 12%, 54%);
     --darkBlue: hsl(213, 19%, 18%);
+    --cardBg:hsl(215, 22%, 15%);
     --veryDarkBlue: hsl(216, 12%, 8%);
     --pink:#ffa4b3;
 }
@@ -40,7 +41,7 @@ body{
     align-self: center;
 }
 .card{
-    background-color: hsl(213, 18%, 12%);
+    background-color: var(--cardBg);
     width: 21rem;
     padding: 2rem;
     border-radius: 2rem;
@@ -54,10 +55,12 @@ body{
 }
 .title{
     color: var(--white);
-    margin: 0;
+    /* margin: ; */
 }
 .main-text{
     color:var(--mediumGrey);
+    line-height:1.5rem;
+    /* margin: 1.5rem 0; */
 }
 .number-list{
     display: flex;
@@ -98,6 +101,7 @@ body{
     letter-spacing: .1rem;
     font-weight: 700;
     cursor: pointer;
+    margin-top: 1rem;
 }
 .btn-submit:hover{
     background-color: var(--white);
