@@ -42,9 +42,9 @@ body{
 }
 .card{
     background-color: var(--cardBg);
-    width: 22rem;
+    width: 23rem;
     padding: 1.5rem;
-    border-radius: 2rem;
+    border-radius: 1.2rem;
     position: relative;
 }
 
@@ -56,7 +56,7 @@ body{
 .title{
     color: var(--white);
     /* margin: ; */
-    font-size:1.5rem;
+    font-size:1.8rem;
 }
 .main-text{
     color:var(--mediumGrey);
@@ -121,4 +121,10 @@ body{
 }
 .atr-txt{
     color: var(--white);
+}
+
+@media (max-width:600px) {
+    .card{
+        width: 85%;
+    }
 }
