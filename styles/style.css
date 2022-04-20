@@ -125,6 +125,9 @@ body{
 
 @media (max-width:600px) {
     .card{
-        width: 85%;
+        width: 75vw;
+    }
+    .attribution{
+        top: 85%;
     }
 }
