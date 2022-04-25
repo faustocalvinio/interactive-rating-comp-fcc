@@ -42,8 +42,8 @@ body{
 }
 .card{
     background-color: var(--cardBg);
-    width: 23rem;
-    padding: 2rem;
+    width: 22rem;
+    padding: 1.5rem;
     border-radius: 1.2rem;
     position: relative;
 }
