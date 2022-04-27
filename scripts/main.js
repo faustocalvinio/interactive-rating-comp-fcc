@@ -3,15 +3,22 @@ const submitBtn=document.querySelector('.btn-submit')
 
 numbersList.forEach(numero => {    
         numero.addEventListener('click',()=>{
-            console.log(document.querySelectorAll('.selected').length)
-            if(document.querySelectorAll('.selected').length==0){
-                numero.classList.toggle('selected')               
+            if(numero.classList.contains('selected'))
+            {
+                numero.classList.remove('selected')
             }
             else
-            {
-                let alertText=`You have already picked ${document.querySelector('.selected').innerHTML}`
-                alert(alertText);
-            }            
+            {            
+            console.log(document.querySelectorAll('.selected').length)
+                if (document.querySelectorAll('.selected').length==0){
+                    numero.classList.toggle('selected')               
+                }
+                else
+                {
+                    let alertText=`You have already picked ${document.querySelector('.selected').innerHTML} touch it again to cancel`
+                    alert(alertText);
+                }   
+            }         
         });    
 });
 
