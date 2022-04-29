@@ -43,7 +43,7 @@ body{
 .card{
     background-color: var(--cardBg);
     width: 22rem;
-    padding: 2rem;
+    padding: 2rem 2rem 1.5rem;
     border-radius: 1.8rem;
     position: relative;
 }
@@ -61,7 +61,7 @@ body{
 .main-text{
     color:var(--mediumGrey);
     line-height:1.5rem;
-    margin:1rem 0 1.5rem ;
+    margin:.9rem 0 1.5rem ;
 }
 .number-list{
     display: flex;
