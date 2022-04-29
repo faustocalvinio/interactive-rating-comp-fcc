@@ -125,9 +125,21 @@ body{
 
 @media (max-width:600px) {
     .card{
-        width: 75vw;
+        width: 70%;
+    }
+    .selection-txt{
+        height: fit-content;
+        margin-top: 2rem;
+        padding: .6rem;
+    }
+    .title{
+        margin-top: 1rem;
     }
     .attribution{
-        top: 85%;
+        top: 88%;
+    }
+    .main-text{
+        font-size: 1rem;
+        
     }
 }
