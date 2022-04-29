@@ -56,11 +56,12 @@ body{
 .title{
     color: var(--white);
     font-size:1.8rem;
+    margin:  0rem;
 }
 .main-text{
     color:var(--mediumGrey);
     line-height:1.5rem;
-    margin: 1.5rem 0;
+    margin:1rem 0 1.5rem ;
 }
 .number-list{
     display: flex;
