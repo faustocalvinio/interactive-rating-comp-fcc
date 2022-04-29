@@ -55,14 +55,12 @@ body{
 }
 .title{
     color: var(--white);
-    /* margin: ; */
     font-size:1.8rem;
 }
 .main-text{
     color:var(--mediumGrey);
     line-height:1.5rem;
-    margin: 1rem 0;
-    /* margin: 1.5rem 0; */
+    margin: 1.5rem 0;
 }
 .number-list{
     display: flex;
